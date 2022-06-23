@@ -16,12 +16,12 @@ or
 
 **And then...**
 
-To convert a gpg key to an ssh key (will replace the user SSH key, if any):
+To convert a gpg key to an ssh key (beware, this will remove and replace the user's current SSH key, if any):
 ```
-openpgp2ssh < mykey.gpg >> ~/.ssh/id_rsa
+openpgp2ssh < mykey.gpg > ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
 ```
-Do not forget to create the corresponding public key:
+Do not forget to create the corresponding public key out of the private key:
 ```
 ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub
 ```
