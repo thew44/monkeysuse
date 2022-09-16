@@ -7,8 +7,11 @@ https://github.com/dkg/monkeysphere/commit/97ade311fc287985972bb73a47dd75450260c
 This tool allows converting gpg private keys to SSH private keys.
 
 **Prerequisites:**
+
 Install the following packages using zypper:
+
 ```perl-Crypt-OpenSSL-RSA```
+
 ```perl-Crypt-OpenSSL-Bignum```
 
 **Usage:**
